@@ -1,0 +1,10 @@
+
+= txt2tags-ports =
+
+Portages de [txt2tags https://txt2tags.org], le convertisseur de texte brut
+vers plus de 40 formats de sortie, vers plusieurs langages : Python 3, Perl,
+Lua, Tcl, Rust et Go, en plus du script Python original.
+
+[images/txt2tags-ports.png]
+
+https://github.com/luginf/txt2tags-ports

@@ -1,0 +1,22 @@
+
+%!includeconf: conf.t2t
+
+= Sparkwyrd =
+
+Réimplémentation en Tcl/Tk du générateur de texte aléatoire Inspiration Pad
+Pro, compatible avec les fichiers ``.ipt`` (tables pondérées, expressions de
+dés, variables, filtres). Utile pour des générateurs de rencontres, de PNJ,
+de trésors ou d'amorces d'histoires pour le jeu de rôle.
+
+[images/sparkwyrd.png]
+
+https://github.com/luginf/Sparkwyrd
+
+----@@----
+
+= Yi Jing =
+
+Petite application graphique Tcl/Tk pour identifier un hexagramme du Yi
+Jing en basculant les six traits yin/yang d'un simple clic.
+
+[github.com/luginf/hexagrams https://github.com/luginf/hexagrams]

@@ -1,0 +1,11 @@
+
+= Forth for TIC-80 =
+
+A port of the Forth language (based on pforth) as a scripting language for
+TIC-80, the fantasy console for making, playing and sharing tiny retro
+games. Adds Forth to the list of available cartridge languages, alongside
+Lua, JavaScript, Ruby, and others.
+
+[images/tic80-forth.png]
+
+https://github.com/luginf/TIC-80

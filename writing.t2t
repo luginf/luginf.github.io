@@ -1,0 +1,41 @@
+
+%!includeconf: conf.t2t
+
+= WrithDeck =
+
+Éditeur de texte sans distraction pour writerdecks (prototypes maison ou
+ordinateurs dédiés à l'écriture), en GUI comme en TUI, depuis un seul fichier
+exécutable sans installation. Coloration Markdown/txt2tags, mode commande
+modal, statistiques d'écriture, minuteur et chronomètre, thèmes clair/sombre.
+Décliné aussi en versions Android, ASM, C, DOS, ESP32, Lua et web.
+
+[images/writhdeck.png]
+
+[github.com/luginf/writhdeck https://github.com/luginf/writhdeck] -
+[binaires sur itch.io https://farvardin.itch.io/writhdeck]
+
+----@@----
+
+= Zettelium =
+
+Application de prise de notes façon Zettelkasten en syntaxe txt2tags, sous
+forme d'un unique fichier HTML autonome (aucun serveur, aucune installation).
+Liens ``[[cible|id]]`` avec panneau de backlinks, coloration et prévisualisation
+en direct, recherche par tag, plusieurs dépôts locaux via l'API File System
+Access. Construit selon les mêmes principes que WrithDeck, avec lequel il
+partage les mêmes fichiers texte.
+
+[images/zettelium.png]
+
+[Essayer en ligne https://luginf.github.io/zettelium-web/zettelium.html] -
+[github.com/luginf/zettelium-web https://github.com/luginf/zettelium-web]
+
+----@@----
+
+= Plugins KOReader =
+
+Plugins maison pour la liseuse [KOReader https://koreader.rocks/], dont
+``txt2tagsreader`` (lecture native des fichiers ``.t2t``) et ``bookstats``
+(statistiques de lecture, nombre de mots).
+
+[github.com/luginf/koreader-plugins https://github.com/luginf/koreader-plugins]

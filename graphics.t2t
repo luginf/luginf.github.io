@@ -1,0 +1,12 @@
+
+= Vector World =
+
+Monde 3D rétro low-poly à facettes plates, façon démo 16 bits : montagnes
+procédurales, tramage Bayer, wireframe, cycle jour/nuit, effets CRT
+(scanlines, vignette) et éditeur de relief. Construit avec Three.js, Vite et
+simplex-noise.
+
+[images/vectorworld.jpg]
+
+[Essayer en ligne https://luginf.github.io/3D_retro] -
+[github.com/luginf/3D_retro https://github.com/luginf/3D_retro]

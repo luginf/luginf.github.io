@@ -1,0 +1,54 @@
+
+A few projects, mostly tools I wrote for my own use and later cleaned up
+enough to share. This page is written in [txt2tags https://txt2tags.org/].
+
+Projects are grouped by topic below.
+
+
+= Writing & reading =
+
+WrithDeck (a writerdeck editor), Zettelium (Zettelkasten-style note-taking)
+and the KOReader plugins.
+
+[See the projects writing.html]
+
+
+= Music & audio =
+
+Di-111 synth (a VST emulator for the Roland D-110 module) and MIDI banks for the Casio
+CDP-S350/CDP-S360.
+
+[See the projects audio.html]
+
+
+= Tabletop RPG & generation =
+
+Sparkwyrd (a random text generator) and a small Yi Jing app.
+
+[See the projects rpg.html]
+
+
+= txt2tags tools =
+
+Ports of txt2tags to several languages.
+
+[See the projects tools.html]
+
+
+= Graphics & 3D =
+
+Vector World, a retro low-poly 3D world in the style of 16-bit demos.
+
+[See the projects graphics.html]
+
+
+= Games =
+
+A Forth language port for TIC-80, the fantasy console.
+
+[See the projects games.html]
+
+
+--------------------
+
+% Add a contact link here if you want to publish one (mail, Mastodon, etc.)

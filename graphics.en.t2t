@@ -1,0 +1,12 @@
+
+= Vector World =
+
+A retro, flat-shaded low-poly 3D world, in the style of 16-bit demos:
+procedural mountains, Bayer dithering, wireframe, a day/night cycle, CRT
+effects (scanlines, vignette) and a heightmap editor. Built with Three.js,
+Vite and simplex-noise.
+
+[images/vectorworld.jpg]
+
+[Try it online https://luginf.github.io/3D_retro] -
+[github.com/luginf/3D_retro https://github.com/luginf/3D_retro]

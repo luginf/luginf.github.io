@@ -1,0 +1,27 @@
+
+%!includeconf: conf.t2t
+
+= Di-111 synth =
+
+Plugin VST3 qui émule le module sonore multitimbre Roland D-110. Fait tourner
+le vrai firmware Roland - menus, écran, éditeurs de patch/timbre, les seize
+boutons de façade - contre un moteur LA32 émulé ([munt https://github.com/munt/munt]).
+Nécessite ses propres dumps de ROM Roland (non fournis, protégés par le droit d'auteur).
+
+[images/d110.jpg]
+
+[github.com/luginf/Di-111-synth https://github.com/luginf/Di-111-synth]
+
+----@@----
+
+= Banques MIDI pour Casio CDP-S350 / CDP-S360 =
+
+Liste complète des 700 voix (18 catégories) du Casio CDP-S350/CDP-S360,
+convertie du format propriétaire MusE (``.idf``) vers MIDNAM, le format XML
+quasi universel d'échange de définitions d'instruments MIDI. Utilisable tel
+quel dans Ardour, Mixbus, Logic Pro et Pro Tools.
+
+Télécharger : [.midnam upload/Casio_CDP-S360.midnam] (Ardour, Mixbus, Logic Pro, Pro Tools) -
+[.middev upload/Casio_CDP-S360.middev] (Logic Pro, Pro Tools) -
+[.idf upload/Casio_CDP-S360.idf] (MusE, source) -
+[script de conversion upload/idf_to_midnam.py]

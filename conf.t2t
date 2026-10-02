@@ -1,0 +1,8 @@
+
+% ----@@---- = icon separator between project entries. Must be preproc:
+% postproc would run too late, after txt2tags' own strikeout mark
+% (--text--) has already eaten the dashes. Replacement is double-quoted
+% (not single) because it contains '' passthrough markers and class='...'
+% attributes - a literal ' inside a single-quoted value truncates it early.
+
+%!preproc: '----@@----' "''<div class='icon-separator'><i class='fas fa-microchip'></i></div>''"
