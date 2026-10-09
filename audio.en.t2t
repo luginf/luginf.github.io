@@ -13,7 +13,65 @@ sixteen front-panel buttons - against an emulated LA32 engine
 
 [github.com/luginf/Di-111-synth https://github.com/luginf/Di-111-synth]
 
-----@@----
+= JiV-881 synth =
+
+An unofficial emulator of the Roland JV-880 rompler (a 1U rack unit from
+1992), based on Nuked-SC55 and jv880_juce. Available as VST3, AU, LV2 and
+CLAP plugins, as a standalone app (macOS, Windows, Linux/AppImage) and as an
+Android app. Requires your own Roland ROM dumps (not included).
+
+[images/jiv881.png]
+
+[github.com/luginf/JiV-881-synth https://github.com/luginf/JiV-881-synth]
+
+= Hexacorde =
+
+An oracular step sequencer: six I Ching hexagrams sit on a grid (6x6 by
+default, from 3x3 to 12x12). Each line of a hexagram is a note, sent to
+another hexagram which echoes it in turn. The piece grows out of how the
+hexagrams are laid out. A single HTML page in plain JavaScript, no
+dependencies and no server, with four themes. Also available as a VCV Rack 2 module.
+
+[images/hexacorde.png]
+
+[Try it online https://luginf.github.io/hexacorde/] -
+[github.com/luginf/hexacorde https://github.com/luginf/hexacorde] -
+[VCV Rack module https://github.com/luginf/hexacorde-vcv]
+
+= Nonet Sequencer =
+
+A plain 9-track (extendable to 16) standalone MIDI sequencer: it has no sound
+engine of its own and drives an external synth or a DAW over MIDI ports. Three
+views of the same drawer: a mouse-driven classic grid, a "retro" view (a small
+text LCD and buttons, styled after the Roland D-20's sequencer, fully
+keyboard-driven) and a piano roll. Tracks default to a D-110-style channel map.
+
+[images/nonet-sequencer.png]
+
+[github.com/luginf/nonet-sequencer https://github.com/luginf/nonet-sequencer]
+
+= abcAmi =
+
+A random music generator in [ABC notation https://abcnotation.com/] format,
+written in Tcl/Tk. You set key, scale, time signature, number of bars, rests
+and note-length distribution; the algorithm combines a Markov chain,
+hierarchical rhythm, global forms (AABA), V-I cadences and variations on
+repeats. Direct playback through abcmidi and timidity or fluidsynth.
+
+[images/abcami.png]
+
+[github.com/luginf/abcAmi https://github.com/luginf/abcAmi]
+
+= MIDI to Furnace =
+
+A MIDI exporter for [Furnace Tracker https://github.com/tildearrow/furnace]
+(``.fur`` files), in pure Tcl/Tk with no dependencies. Settings for rhythmic
+resolution, transposition, velocity in the volume column, the number of YM2612
+chips and the mapping from MIDI channels to Furnace channels.
+
+[images/midi-furnace.png]
+
+[github.com/luginf/export_midi_to_furnace https://github.com/luginf/export_midi_to_furnace]
 
 = MIDI banks for Casio CDP-S350 / CDP-S360 =
 

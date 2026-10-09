@@ -12,7 +12,18 @@ de trésors ou d'amorces d'histoires pour le jeu de rôle.
 
 https://github.com/luginf/Sparkwyrd
 
-----@@----
+= Escapades =
+
+Petit roguelike en mode texte, en Lua, pensé pour les pauses café et
+rejouable à l'infini : monde de surface généré (plaines, forêts, village),
+cavernes, tour à plusieurs niveaux, le tout procédural. Champ de vision,
+combat au système de jeu de rôle ESCAPADES, quêtes scénarisables, bilingue
+français et anglais. Rendu CP437, jouable dans un terminal comme sur la
+console Linux. Aventure d'introduction : La Tour Murmurante.
+
+[images/escapades.png]
+
+[github.com/luginf/escapades-roguelike https://github.com/luginf/escapades-roguelike]
 
 = Yi Jing =
 

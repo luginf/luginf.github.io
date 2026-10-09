@@ -7,31 +7,31 @@ Les projets sont regroupés par rubrique ci-dessous.
 
 = Écriture & lecture =
 
-WrithDeck (éditeur pour writerdecks), Zettelium (prise de notes façon
-Zettelkasten) et les plugins KOReader.
+WrithDeck (éditeur pour writerdecks) et ses nombreux portages, Zettelium (prise de notes
+façon Zettelkasten), les plugins KOReader et SciTE.
 
 [Voir les projets writing.fr.html]
 
 
 = Musique & audio =
 
-Di-111 synth (un émulateur VST du module Roland D-110) et des banques MIDI pour le Casio
-CDP-S350/CDP-S360.
+Deux émulateurs VST/AU (Roland D-110 et JV-880), des séquenceurs (Hexacorde, Nonet),
+un générateur ABC, un export MIDI vers Furnace et des banques MIDI Casio.
 
 [Voir les projets audio.fr.html]
 
 
 = Jeu de rôle & génération =
 
-Sparkwyrd (générateur de texte aléatoire) et une petite application pour le
-Yi Jing.
+Sparkwyrd (générateur de texte aléatoire), un roguelike (Escapades) et une petite
+application pour le Yi Jing.
 
 [Voir les projets rpg.fr.html]
 
 
 = Outils txt2tags =
 
-Portages de txt2tags vers plusieurs langages.
+Portages de txt2tags vers plusieurs langages et un script pour QOwnNotes.
 
 [Voir les projets tools.fr.html]
 
@@ -45,11 +45,17 @@ Vector World, un monde 3D rétro low-poly façon démo 16 bits.
 
 = Jeux =
 
-Un portage du langage Forth pour TIC-80, la console fantasy.
+Forth pour TIC-80, un jeu de stratégie (Halebarde et Gonfanon) et des morpions pour Uxn.
 
 [Voir les projets games.fr.html]
 
 
---------------------
 
 % Ajoute ici un lien de contact si tu veux en publier un (mail, Mastodon, etc.)
+
+
+= Utilitaires =
+
+Une calculatrice pour Window Maker et la bibliothèque de dock apps sur laquelle elle repose.
+
+[Voir les projets misc.fr.html]

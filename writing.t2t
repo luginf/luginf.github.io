@@ -14,7 +14,33 @@ Décliné aussi en versions Android, ASM, C, DOS, ESP32, Lua et web.
 [github.com/luginf/writhdeck https://github.com/luginf/writhdeck] -
 [binaires sur itch.io https://farvardin.itch.io/writhdeck]
 
-----@@----
+= WrithDeck partout =
+
+Le même éditeur, porté sur des machines très différentes : Android (Kotlin),
+ESP32 (JimTcl embarqué, sortie VGA et clavier PS/2), assembleur, uxn, web (un
+seul fichier HTML) et C. Cette dernière version produit un binaire statique
+minuscule, sans dépendance, pour du matériel très ancien (photo : un Toshiba 2180).
+
+[images/writhdeck-c.jpg]
+
+[Android https://github.com/luginf/writhdeck-android] -
+[ESP32 https://github.com/luginf/writhdeck-esp32] -
+[ASM https://github.com/luginf/writhdeck-asm] -
+[uxn https://github.com/luginf/writhdeck-uxn] -
+[web https://github.com/luginf/writhdeck-web] -
+[C https://github.com/luginf/writhdeck-c]
+
+= Plugins SciTE =
+
+Scripts Lua pour l'éditeur [SciTE https://www.scintilla.org/SciTE.html] : sélecteur
+et navigateur de fichiers avec recherche dans le contenu et les tags, fichiers
+récents, snippets, navigateur de titres (txt2tags et Markdown), mise en forme
+txt2tags/Markdown par menu contextuel, calcul d'expressions, et liens
+``[[cible|ID]]`` façon Zettelkasten avec backlinks.
+
+[images/scite.png]
+
+[github.com/luginf/scite-plugins https://github.com/luginf/scite-plugins]
 
 = Zettelium =
 
@@ -29,8 +55,6 @@ partage les mêmes fichiers texte.
 
 [Essayer en ligne https://luginf.github.io/zettelium-web/zettelium.html] -
 [github.com/luginf/zettelium-web https://github.com/luginf/zettelium-web]
-
-----@@----
 
 = Plugins KOReader =
 

@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Luginfo10</title>
 <meta name="generator" content="http://txt2tags.org">
+<script src="theme.js"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
 <link rel="stylesheet" href="fontawesome/css/solid.min.css">
+<link rel="stylesheet" href="fontawesome/css/brands.min.css">
 </head>
-<body>
+<body class="page-games">
 <header class="site-header">
 <div class="header-top">
-<a class="brand" href="index.html">Luginfo10</a><br/>
+<a class="brand" href="index.html"><img class="avatar" src="images/avatar.png" alt="" width="32" height="32">Luginfo10</a>
+<div class="header-actions">
 <a class="lang-switch" href="games.fr.html">Version française</a>
+<button id="theme-toggle" class="theme-toggle" type="button" hidden aria-label="Toggle light/dark theme" title="Toggle light/dark theme"></button>
 </div>
-<hr/>
+</div>
 <nav class="site-nav">
 <input type="checkbox" id="nav-toggle" class="nav-toggle">
 <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰ Menu</label>
@@ -26,6 +31,7 @@
 <a href="tools.html">txt2tags tools</a>
 <a href="graphics.html">Graphics &amp; 3D</a>
 <a href="games.html">Games</a>
+<a href="misc.html">Utilities</a>
 </div>
 </nav>
 </header>
@@ -46,7 +52,48 @@ Lua, JavaScript, Ruby, and others.
 <p>
 <a href="https://github.com/luginf/TIC-80">https://github.com/luginf/TIC-80</a>
 </p>
+
+</section>
+<section>
+<h1>Halebarde et Gonfanon</h1>
+
+<p>
+A turn-based strategy game in pygame, adapted from the board game of the same
+name. Two kingdoms face each other on a bounded battlefield: mail-clad
+soldiers, archers, and scouts able to infiltrate the enemy camp. Two players
+locally or over the network, or against an AI at three levels, with three
+graphical themes.
+</p>
+<p>
+<img class="center" src="images/halebarde.png" alt="">
+</p>
+<p>
+<a href="https://github.com/luginf/halebarde_et_gonfanon">github.com/luginf/halebarde_et_gonfanon</a>
+</p>
+
+</section>
+<section>
+<h1>Tic-tac-toe for Uxn</h1>
+
+<p>
+Two tic-tac-toe games for Hundredrabbits' <a href="https://wiki.xxiivv.com/site/uxntal.html">Varvara/Uxn</a>
+virtual machine: a 3x3 grid and a 5x5 grid where you need four in a row. Playable
+with the mouse or the keyboard.
+</p>
+<p>
+<img class="center" src="images/uxn-xo.png" alt="">
+</p>
+<p>
+<a href="https://github.com/luginf/uxneries">github.com/luginf/uxneries</a>
+</p>
 </section>
 </article>
+<footer class="site-footer">
+<h2>Social networks</h2>
+<div class="social">
+<a href="https://mastodon.online/@luginfo10" rel="me" aria-label="Mastodon" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
+<a href="https://github.com/luginf" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+</div>
+</footer>
 </body>
 </html>

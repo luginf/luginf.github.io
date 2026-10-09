@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Luginfo10</title>
 <meta name="generator" content="http://txt2tags.org">
+<script src="theme.js"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
 <link rel="stylesheet" href="fontawesome/css/solid.min.css">
+<link rel="stylesheet" href="fontawesome/css/brands.min.css">
 </head>
-<body>
+<body class="page-audio">
 <header class="site-header">
 <div class="header-top">
-<a class="brand" href="index.html">Luginfo10</a><br/>
+<a class="brand" href="index.html"><img class="avatar" src="images/avatar.png" alt="" width="32" height="32">Luginfo10</a>
+<div class="header-actions">
 <a class="lang-switch" href="audio.fr.html">Version française</a>
+<button id="theme-toggle" class="theme-toggle" type="button" hidden aria-label="Toggle light/dark theme" title="Toggle light/dark theme"></button>
 </div>
-<hr/>
+</div>
 <nav class="site-nav">
 <input type="checkbox" id="nav-toggle" class="nav-toggle">
 <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰ Menu</label>
@@ -26,6 +31,7 @@
 <a href="tools.html">txt2tags tools</a>
 <a href="graphics.html">Graphics &amp; 3D</a>
 <a href="games.html">Games</a>
+<a href="misc.html">Utilities</a>
 </div>
 </nav>
 </header>
@@ -47,8 +53,95 @@ sixteen front-panel buttons - against an emulated LA32 engine
 <p>
 <a href="https://github.com/luginf/Di-111-synth">github.com/luginf/Di-111-synth</a>
 </p>
+
+</section>
+<section>
+<h1>JiV-881 synth</h1>
+
 <p>
-<div class='icon-separator'><i class='fas fa-microchip'></i></div>
+An unofficial emulator of the Roland JV-880 rompler (a 1U rack unit from
+1992), based on Nuked-SC55 and jv880_juce. Available as VST3, AU, LV2 and
+CLAP plugins, as a standalone app (macOS, Windows, Linux/AppImage) and as an
+Android app. Requires your own Roland ROM dumps (not included).
+</p>
+<p>
+<img class="center" src="images/jiv881.png" alt="">
+</p>
+<p>
+<a href="https://github.com/luginf/JiV-881-synth">github.com/luginf/JiV-881-synth</a>
+</p>
+
+</section>
+<section>
+<h1>Hexacorde</h1>
+
+<p>
+An oracular step sequencer: six I Ching hexagrams sit on a grid (6x6 by
+default, from 3x3 to 12x12). Each line of a hexagram is a note, sent to
+another hexagram which echoes it in turn. The piece grows out of how the
+hexagrams are laid out. A single HTML page in plain JavaScript, no
+dependencies and no server, with four themes. Also available as a VCV Rack 2 module.
+</p>
+<p>
+<img class="center" src="images/hexacorde.png" alt="">
+</p>
+<p>
+<a href="https://luginf.github.io/hexacorde/">Try it online</a> -
+<a href="https://github.com/luginf/hexacorde">github.com/luginf/hexacorde</a> -
+<a href="https://github.com/luginf/hexacorde-vcv">VCV Rack module</a>
+</p>
+
+</section>
+<section>
+<h1>Nonet Sequencer</h1>
+
+<p>
+A plain 9-track (extendable to 16) standalone MIDI sequencer: it has no sound
+engine of its own and drives an external synth or a DAW over MIDI ports. Three
+views of the same drawer: a mouse-driven classic grid, a "retro" view (a small
+text LCD and buttons, styled after the Roland D-20's sequencer, fully
+keyboard-driven) and a piano roll. Tracks default to a D-110-style channel map.
+</p>
+<p>
+<img class="center" src="images/nonet-sequencer.png" alt="">
+</p>
+<p>
+<a href="https://github.com/luginf/nonet-sequencer">github.com/luginf/nonet-sequencer</a>
+</p>
+
+</section>
+<section>
+<h1>abcAmi</h1>
+
+<p>
+A random music generator in <a href="https://abcnotation.com/">ABC notation</a> format,
+written in Tcl/Tk. You set key, scale, time signature, number of bars, rests
+and note-length distribution; the algorithm combines a Markov chain,
+hierarchical rhythm, global forms (AABA), V-I cadences and variations on
+repeats. Direct playback through abcmidi and timidity or fluidsynth.
+</p>
+<p>
+<img class="center" src="images/abcami.png" alt="">
+</p>
+<p>
+<a href="https://github.com/luginf/abcAmi">github.com/luginf/abcAmi</a>
+</p>
+
+</section>
+<section>
+<h1>MIDI to Furnace</h1>
+
+<p>
+A MIDI exporter for <a href="https://github.com/tildearrow/furnace">Furnace Tracker</a>
+(<code>.fur</code> files), in pure Tcl/Tk with no dependencies. Settings for rhythmic
+resolution, transposition, velocity in the volume column, the number of YM2612
+chips and the mapping from MIDI channels to Furnace channels.
+</p>
+<p>
+<img class="center" src="images/midi-furnace.png" alt="">
+</p>
+<p>
+<a href="https://github.com/luginf/export_midi_to_furnace">github.com/luginf/export_midi_to_furnace</a>
 </p>
 
 </section>
@@ -69,5 +162,12 @@ Download: <a href="upload/Casio_CDP-S360.midnam">.midnam</a> (Ardour, Mixbus, Lo
 </p>
 </section>
 </article>
+<footer class="site-footer">
+<h2>Social networks</h2>
+<div class="social">
+<a href="https://mastodon.online/@luginfo10" rel="me" aria-label="Mastodon" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
+<a href="https://github.com/luginf" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+</div>
+</footer>
 </body>
 </html>

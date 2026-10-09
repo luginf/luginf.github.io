@@ -8,3 +8,11 @@ Lua, Tcl, Rust et Go, en plus du script Python original.
 [images/txt2tags-ports.png]
 
 https://github.com/luginf/txt2tags-ports
+
+= txt2tags-it =
+
+Script pour [QOwnNotes https://www.qownnotes.org/], dérivé du script markdown-it
+officiel : il permet d'utiliser la syntaxe txt2tags en plus de Markdown, dans
+l'éditeur comme dans la fenêtre d'aperçu.
+
+[github.com/luginf/txt2tags-it https://github.com/luginf/txt2tags-it]

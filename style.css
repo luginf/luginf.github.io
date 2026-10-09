@@ -8,9 +8,14 @@
   --nav-bg: #0b3c5d;
   --nav-text: #ffffff;
   --nav-muted: #eeeeee;
+  --tile-bg: #ffffff;
+  --foot-bg: #f0efeb;
+  --foot-icon: #55524b;
+  --t1: #e9d9c4; --t2: #d3dfd0; --t3: #e6cfc8;
+  --t4: #d0d9e2; --t5: #e4e0c4; --t6: #dcd0e0; --t7: #d9d9d4;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --bg: #161512;
     --text: #ece9e2;
     --muted: #a7a297;
@@ -20,13 +25,35 @@
     --nav-bg: #0d0c0a;
     --nav-text: #ffffff;
     --nav-muted: #eeeeee;
+    --tile-bg: #1d1b17;
+    --foot-bg: #1f1d19;
+    --foot-icon: #a7a297;
+    --t1: #3a2f22; --t2: #28342a; --t3: #3b2a26;
+    --t4: #26313b; --t5: #373522; --t6: #342b38; --t7: #2f2f2b;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #161512;
+  --text: #ece9e2;
+  --muted: #a7a297;
+  --accent: #e07a5f;
+  --border: #33312b;
+  --code-bg: #262420;
+  --nav-bg: #0d0c0a;
+  --nav-text: #ffffff;
+  --nav-muted: #eeeeee;
+  --tile-bg: #1d1b17;
+  --foot-bg: #1f1d19;
+  --foot-icon: #a7a297;
+  --t1: #3a2f22; --t2: #28342a; --t3: #3b2a26;
+  --t4: #26313b; --t5: #373522; --t6: #342b38; --t7: #2f2f2b;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body {
-  max-width: 924px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 0 1.5rem 4rem;
+  padding: 0 1.5rem 0;
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -47,14 +74,39 @@ body {
 }
 .header-top {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   color: var(--nav-text);
   font-size: 1.15rem;
   font-weight: 600;
+}
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--nav-muted);
+  color: var(--nav-text);
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.theme-toggle:hover { background: rgba(255, 255, 255, 0.15); }
+.theme-toggle::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f186";
+}
+:root[data-theme="dark"] .theme-toggle::before { content: "\f185"; }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 .lang-switch {
   color: var(--nav-muted);
@@ -110,18 +162,11 @@ body {
 article > p:first-child {
   color: var(--muted);
 }
-article h1 {
-  font-size: 1.25rem;
-  margin: 2.4rem 0 0.6rem;
-  border-bottom: 1px solid var(--border);
-    width: 25%;
-  padding-bottom: 0.4rem;
-}
 p { margin: 0.6rem 0; }
 code, tt {
   background: var(--code-bg);
   padding: 0.1rem 0.35rem;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 0.9em;
 }
 a {
@@ -129,32 +174,140 @@ a {
   text-decoration: none;
 }
 a:hover { text-decoration: underline; }
-hr {
-  /*border: none;*/
-  border-top: 1px solid var(--text);
-  margin: 1.5rem 0 1rem;
+
+/* Tiles: txt2tags wraps each "= Title =" in a <section>, so the grid is
+   plain CSS on article > section. Intro paragraphs (direct children of
+   article) span the whole row. The first tile of a page is double width. */
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  gap: 1rem;
 }
+article > p { grid-column: 1 / -1; margin: 0; max-width: 40rem; }
+article > section {
+  position: relative;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  display: flex;
+  flex-direction: column;
+  background: var(--tile-bg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+article > section:hover { border-color: var(--text); }
+article > section:first-of-type { grid-column: span 2; }
+article > section > * { margin-left: 1rem; margin-right: 1rem; }
+article > section > :last-child { margin-bottom: 1.1rem; }
+article h1 {
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+article > section p { font-size: 0.93rem; }
+/* Screenshot goes first, cropped to a fixed frame, flush with the edges. */
+article > section > p:has(img) { order: -1; margin: 0; }
 article img {
   display: block;
-  max-width: 100%;
-  height: auto;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin: 1rem 0;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top left;
+  border-bottom: 1px solid var(--border);
 }
-.icon-separator {
-  display: flex;
-  align-items: center;
-  width: 95%;
-  color: var(--muted);
-  margin: 2rem auto 1.4rem;
-}
-.icon-separator::before,
-.icon-separator::after {
+article > section:first-of-type img { aspect-ratio: 2 / 1; }
+/* Single-link tiles without a screenshot are clickable as a whole. */
+article > section:not(:has(img)) > p:last-child > a:only-child::after {
   content: "";
-  flex: 1;
-  border-top: 5px solid var(--border);
+  position: absolute;
+  inset: 0;
 }
-.icon-separator i {
-  margin: 0 0.8rem;
+article > section > p:last-child > a:only-child { font-weight: 600; }
+
+/* Home page: no screenshots, so each category tile gets a flat colour
+   and a large icon instead. */
+.page-index article > section {
+  min-height: 11rem;
+  border-color: transparent;
+}
+.page-index article > section::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: var(--muted);
+  margin: 1rem 1rem 0;
+}
+.page-index article > section:nth-of-type(1) { background: var(--t1); }
+.page-index article > section:nth-of-type(2) { background: var(--t2); }
+.page-index article > section:nth-of-type(3) { background: var(--t3); }
+.page-index article > section:nth-of-type(4) { background: var(--t4); }
+.page-index article > section:nth-of-type(5) { background: var(--t5); }
+.page-index article > section:nth-of-type(6) { background: var(--t6); }
+.page-index article > section:nth-of-type(7) { background: var(--t7); }
+.page-index article > section:nth-of-type(1)::before { content: "\f5ad"; }
+.page-index article > section:nth-of-type(2)::before { content: "\f001"; }
+.page-index article > section:nth-of-type(3)::before { content: "\f522"; }
+.page-index article > section:nth-of-type(4)::before { content: "\f121"; }
+.page-index article > section:nth-of-type(5)::before { content: "\f1b2"; }
+.page-index article > section:nth-of-type(6)::before { content: "\f11b"; }
+.page-index article > section:nth-of-type(7)::before { content: "\f0ad"; }
+.page-index article > section:hover { border-color: var(--text); }
+.page-index article > section:first-of-type { grid-column: auto; }
+.page-index article > section:nth-of-type(1),
+.page-index article > section:nth-of-type(4) { grid-column: span 2; }
+.page-index article > section:nth-of-type(1) h1,
+.page-index article > section:nth-of-type(4) h1 { font-size: 1.4rem; }
+.page-index article > hr { display: none; }
+
+@media (max-width: 640px) {
+  body { padding: 0 1rem 0; }
+  .site-header { margin: 0 -1rem 1.2rem; padding: 0.8rem 1rem; }
+  article { grid-template-columns: 1fr; gap: 0.8rem; }
+  .page-index article > section { min-height: 0; }
+  article > section img,
+  article > section:first-of-type img { aspect-ratio: 16 / 10; }
+  article > section:first-of-type,
+  .page-index article > section:nth-of-type(n) { grid-column: auto; }
+}
+
+/* Avatar next to the brand, round like on GitHub. */
+.brand .avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+/* Footer: discreet light-grey band with plain dark-grey icons. The heading
+   stays in the markup for screen readers but is not shown. */
+.site-footer {
+  background: var(--foot-bg);
+  margin: 2.5rem -1.5rem 0;
+  padding: 0.9rem 1.5rem;
+  text-align: center;
+}
+.site-footer h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+}
+.social a {
+  color: var(--foot-icon);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+.social a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+  .site-footer { margin: 2rem -1rem 0; padding: 0.9rem 1rem; }
 }

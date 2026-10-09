@@ -1,0 +1,10 @@
+# Build inputs (kept local; only the generated site is published)
+# *.t2t
+_shell-*.html
+# Makefile
+# README.md
+
+# Editor / OS junk
+*~
+*.swp
+.DS_Store

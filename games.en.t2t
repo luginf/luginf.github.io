@@ -9,3 +9,25 @@ Lua, JavaScript, Ruby, and others.
 [images/tic80-forth.png]
 
 https://github.com/luginf/TIC-80
+
+= Halebarde et Gonfanon =
+
+A turn-based strategy game in pygame, adapted from the board game of the same
+name. Two kingdoms face each other on a bounded battlefield: mail-clad
+soldiers, archers, and scouts able to infiltrate the enemy camp. Two players
+locally or over the network, or against an AI at three levels, with three
+graphical themes.
+
+[images/halebarde.png]
+
+[github.com/luginf/halebarde_et_gonfanon https://github.com/luginf/halebarde_et_gonfanon]
+
+= Tic-tac-toe for Uxn =
+
+Two tic-tac-toe games for Hundredrabbits' [Varvara/Uxn https://wiki.xxiivv.com/site/uxntal.html]
+virtual machine: a 3x3 grid and a 5x5 grid where you need four in a row. Playable
+with the mouse or the keyboard.
+
+[images/uxn-xo.png]
+
+[github.com/luginf/uxneries https://github.com/luginf/uxneries]

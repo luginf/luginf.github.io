@@ -14,7 +14,33 @@ light/dark themes. Also ported to Android, ASM, C, DOS, ESP32, Lua and web.
 [github.com/luginf/writhdeck https://github.com/luginf/writhdeck] -
 [binaries on itch.io https://farvardin.itch.io/writhdeck]
 
-----@@----
+= WrithDeck everywhere =
+
+The same editor, ported to very different machines: Android (Kotlin), ESP32
+(embedded JimTcl, VGA output and PS/2 keyboard), assembly, uxn, web (a single
+HTML file) and C. The C version produces a tiny static binary with no
+dependencies, for very old hardware (photo: a Toshiba 2180).
+
+[images/writhdeck-c.jpg]
+
+[Android https://github.com/luginf/writhdeck-android] -
+[ESP32 https://github.com/luginf/writhdeck-esp32] -
+[ASM https://github.com/luginf/writhdeck-asm] -
+[uxn https://github.com/luginf/writhdeck-uxn] -
+[web https://github.com/luginf/writhdeck-web] -
+[C https://github.com/luginf/writhdeck-c]
+
+= SciTE plugins =
+
+Lua scripts for the [SciTE https://www.scintilla.org/SciTE.html] editor: a file
+finder and browser with content and tag search, recent files, snippets, a
+heading navigator (txt2tags and Markdown), txt2tags/Markdown formatting from
+the context menu, expression evaluation, and Zettelkasten-style
+``[[target|ID]]`` links with backlinks.
+
+[images/scite.png]
+
+[github.com/luginf/scite-plugins https://github.com/luginf/scite-plugins]
 
 = Zettelium =
 
@@ -29,8 +55,6 @@ files.
 
 [Try it online https://luginf.github.io/zettelium-web/zettelium.html] -
 [github.com/luginf/zettelium-web https://github.com/luginf/zettelium-web]
-
-----@@----
 
 = KOReader plugins =
 

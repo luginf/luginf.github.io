@@ -1,0 +1,14 @@
+%!includeconf: conf.t2t
+
+= wmdcalc and wmdockapps =
+
+wmdcalc is a small calculator dock app for [Window Maker https://www.windowmaker.org/],
+with three input modes: Forth (reverse Polish notation), Lisp (s-expressions)
+and classic. A popup window gives a larger keypad, and keyboard input and the
+clipboard are supported. It is built on my fork of wmdockapps, a C++ library
+for writing themed dock apps (the picture shows the apps shipped with it).
+
+[images/wmdockapps.webp]
+
+[github.com/luginf/wmdcalc https://github.com/luginf/wmdcalc] -
+[github.com/luginf/wmdockapps https://github.com/luginf/wmdockapps]

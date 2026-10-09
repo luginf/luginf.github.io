@@ -9,3 +9,25 @@ cartouches, aux côtés de Lua, JavaScript, Ruby, etc.
 [images/tic80-forth.png]
 
 https://github.com/luginf/TIC-80
+
+= Halebarde et Gonfanon =
+
+Jeu de stratégie au tour par tour en pygame, adapté du jeu de plateau du même
+nom. Deux royaumes s'affrontent sur un champ de bataille borné : soldats en
+cotte de mailles, archers et éclaireurs capables d'infiltrer le camp adverse.
+Deux joueurs en local ou en réseau, ou contre une IA à trois niveaux, avec
+trois thèmes graphiques.
+
+[images/halebarde.png]
+
+[github.com/luginf/halebarde_et_gonfanon https://github.com/luginf/halebarde_et_gonfanon]
+
+= Morpion pour Uxn =
+
+Deux morpions pour la machine virtuelle [Varvara/Uxn https://wiki.xxiivv.com/site/uxntal.html]
+de Hundredrabbits : une grille 3x3 et une grille 5x5 où il faut aligner quatre
+pièces. Jouable à la souris ou au clavier.
+
+[images/uxn-xo.png]
+
+[github.com/luginf/uxneries https://github.com/luginf/uxneries]

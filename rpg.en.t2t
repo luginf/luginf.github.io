@@ -12,7 +12,18 @@ treasure tables, or story seeds for tabletop RPGs.
 
 https://github.com/luginf/Sparkwyrd
 
-----@@----
+= Escapades =
+
+A small text-mode roguelike in Lua, made for coffee breaks and endlessly
+replayable: a generated surface world (plains, forests, a village), caves and
+a multi-level tower, all procedural. Field of view, combat using the ESCAPADES
+tabletop RPG system, scriptable quests, bilingual French and English. CP437
+rendering, playable in a terminal as well as on the Linux console. The
+introductory adventure is The Whispering Tower.
+
+[images/escapades.png]
+
+[github.com/luginf/escapades-roguelike https://github.com/luginf/escapades-roguelike]
 
 = Yi Jing =
 
