@@ -55,6 +55,6 @@ Forth for TIC-80, a strategy game (Halebarde et Gonfanon) and tic-tac-toe for Ux
 
 = Utilities =
 
-A calculator for Window Maker and the dock-app library it is built on.
+Lugforth (a Forth with SDL2, editors and an APK), a calculator for Window Maker and the dock-app library it is built on.
 
 [See the projects misc.html]

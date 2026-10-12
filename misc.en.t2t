@@ -1,5 +1,23 @@
 %!includeconf: conf.t2t
 
+= Lugforth =
+
+An unofficial fork of [uEforth https://github.com/flagxor/ueforth] (Bradley D. Nelson), a
+Forth bootstrapped from a small C kernel, which I extended: SDL2 bindings (window,
+drawing, sound, ABC music and soundfont), a graphical console with a color picker and
+system fonts, a line editor with history and completion, two text editors (``ed`` for code,
+``writhdeck`` for writing, with color themes including colorForth), examples (drum machine,
+breakout, roguelike, piano roll), and ports: Android (one APK), web, Game Boy Advance,
+Raspberry Pi Pico and ESP32. A single executable is enough on Linux (``lugforth``, or
+``lugforth-mini`` without editors or SDL2), plus an AppImage and an APK.
+
+[images/lugforth.png]
+
+[github.com/luginf/lugforth https://github.com/luginf/lugforth] -
+[website https://luginf.github.io/lugforth/] -
+[downloads https://github.com/luginf/lugforth/releases]
+
+
 = wmdcalc and wmdockapps =
 
 wmdcalc is a small calculator dock app for [Window Maker https://www.windowmaker.org/],
